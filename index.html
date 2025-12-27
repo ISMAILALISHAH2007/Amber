@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Gadhi ❤️ | Happy New Year</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="theme-color" content="#ff4081">
+</head>
+
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="Tum Nazar Mein Raho  Chillout Lofi Mix  Atif Aslam  Tripti Dimri  Laila Majnu  2025.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Controls -->
+    <div class="music-controls">
+        <button id="musicToggle" title="Toggle Music">
+            <i class="fas fa-music"></i>
+        </button>
+        <div class="music-wave">
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loading-text">For My Gadhi ❤️</div>
+            <div class="heart"></div>
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container" id="mainContent" style="display: none;">
+        
+        <!-- ===== HOMEPAGE ===== -->
+        <section class="page active" id="home">
+            <div class="home-content">
+                <div class="love-birds">💑</div>
+                <h1 class="main-title">For My <span class="highlight">Gadhi</span> ❤️</h1>
+                <h2 class="subtitle">From Your <span class="highlight">Gadha</span> 🐴</h2>
+                <p class="date-subtitle">A journey that began on <span class="special-date">27.10.2025</span>...</p>
+
+                <div class="flower-animation">
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                </div>
+
+                <div class="love-button-container">
+                    <button class="love-button" id="enterBtn">
+                        <i class="fas fa-heart"></i> Step Into Our Memory Book <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <p class="hint">Click the music button <i class="fas fa-music"></i> for background melody</p>
+            </div>
+        </section>
+
+        <!-- ===== PROPOSAL SECTION ===== -->
+        <section class="page" id="proposal">
+            <div class="section-header">
+                <h1><i class="fas fa-heart"></i> 27.10.2025</h1>
+                <h2>The Day I Said 'Yes' To Forever</h2>
+            </div>
+
+            <div class="proposal-container">
+                <div class="proposal-text">
+                    <p>"That evening, with a trembling heart, you asked... and my world found its home."</p>
+                    <p class="quote">Best 'Yes' I ever said, Gadhi.</p>
+                </div>
+
+                <div class="proposal-images">
+                    <div class="proposal-img-container">
+                        <img src="images/proposal1.jpg" alt="Our Proposal Chat 1" class="proposal-img">
+                        <div class="img-label">The Beginning of Forever</div>
+                    </div>
+                    <div class="proposal-img-container">
+                        <img src="images/proposal2.jpg" alt="Our Proposal Chat 2" class="proposal-img">
+                        <div class="img-label">My Heart's Response</div>
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="nav-btn prev-btn" data-target="home">
+                        <i class="fas fa-arrow-left"></i> Home
+                    </button>
+                    <button class="nav-btn next-btn" data-target="memories">
+                        Memories <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== MEMORIES SECTION ===== -->
+        <section class="page" id="memories">
+            <div class="section-header">
+                <h1><i class="fas fa-images"></i> Your Photo Memories</h1>
+                <h2>When Words Aren't Enough, There Are These Frames</h2>
+            </div>
+
+            <div class="memories-container">
+                <div class="photo-collage">
+                    <div class="photo-frame">
+                        <img src="images/pic2.jpeg" alt="Our Memory 1">
+                        <div class="photo-caption">"This smile is my favorite view."</div>
+                    </div>
+                    <div class="photo-frame">
+                        <img src="images/pic1.jpeg" alt="Our Memory 2">
+                        <div class="photo-caption">"Where you are, is where I belong."</div>
+                    </div>
+                    <div class="photo-frame">
+                        <img src="images/pic3.jpeg" alt="Our Memory 3">
+                        <div class="photo-caption">"Happiness is being with you."</div>
+                    </div>
+                    <div class="photo-frame">
+                        <img src="images/pic4.jpeg" alt="Our Memory 4">
+                        <div class="photo-caption">"My favorite adventure is us."</div>
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="nav-btn prev-btn" data-target="proposal">
+                        <i class="fas fa-arrow-left"></i> Proposal
+                    </button>
+                    <button class="nav-btn next-btn" data-target="flowers">
+                        Flowers <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FLOWERS SECTION ===== -->
+        <section class="page" id="flowers">
+            <div class="section-header">
+                <h1><i class="fas fa-seedling"></i> Our Secret Language</h1>
+                <h2>Flowers 🌸🌻</h2>
+            </div>
+
+            <div class="flowers-container">
+                <div class="flower-card">
+                    <div class="flower-title">
+                        <h3>The Flower You Sent Me</h3>
+                    </div>
+                    <div class="flower-img-container">
+                        <img src="images/flower2.jpg" alt="Flower from Amber">
+                    </div>
+                    <div class="flower-message">
+                        "The day this arrived, I knew... every petal held your unspoken love.😂"
+                        <div class="signature">- Gadha</div>
+                    </div>
+                </div>
+
+                <div class="flower-card">
+                    <div class="flower-title">
+                        <h3>The Flower I Send You</h3>
+                    </div>
+                    <div class="flower-img-container">
+                        <img src="images/flower1.jpg" alt="Flower from Ismail">
+                    </div>
+                    <div class="flower-message">
+                        "Sending you a garden of my feelings, because words fall short.😂"
+                        <div class="signature">Love, Gadha 😂</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="nav-btn prev-btn" data-target="memories">
+                    <i class="fas fa-arrow-left"></i> Memories
+                </button>
+                <button class="nav-btn next-btn" data-target="messages">
+                    Messages <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- ===== MESSAGES SECTION ===== -->
+        <section class="page" id="messages">
+            <div class="section-header">
+                <h1><i class="fas fa-envelope"></i> Messages I Keep Saved</h1>
+                <h2>In My Soul</h2>
+            </div>
+
+            <div class="messages-container">
+                <div class="message-box">
+                    <div class="message-icon"><i class="fas fa-heart"></i></div>
+                    <p class="message-text">"Ismail 😭😭 tbh hume mile eik month heee hua hai but hum bht attach ho chuke hn and ik future ka but still Kuch na kuch ho jayega inshallah and sath hoge hum and  btw tysm for treating me right and healing me and I love u so much my love mere forever Gadhe💖💗 and tbh I trust u more than I trust myself aur han ab dar nhi lagta ka tum choroge 😇😇 ka ka Tumne promise kiya hai and tum fake promise nhi krte 😇 mujhe yaad a rhi tumhari but Tum thak gye the nend a rhi thi tumhe toh sone de diya 🤡 but tbh I love u so much Ismail"</p>
+                </div>
+
+                <div class="message-box">
+                    <div class="message-icon"><i class="fas fa-star"></i></div>
+                    <p class="message-text">"Mere gadhe aj jo hua uske liye maaf krdo 😓 sorry nhi bol rhi tumne mana kiya but maaf krdo bol rhi 😇 ami pr ghussa tha idk but tumse rude ho gyi and I love you so much ismail sach mein I love you so much 😭 day by day aur attach ho rhe hum and tum aur ache lagte jaa rhe mujhe 😭😭😭 and tum roe aj 😭🙏🏻 tum meri wajaha se mat roya kro tum bs khush raho and I love you so much ismail 😭 tumse baat kr ka din acha ho jata and tum meri zindagi me sab se ziyadah important ho tum and yeh larai wagira hota rahega obviously but but kahi nhi jane wali na mein aur na hee tum ik and I trust u so much khud se ziyadah tum pr trust hai and I love you so much my forever Gadhe 💗 and tumhe jo bhi bura lage na toh bata diya kro gadhe mein tumhari ho Humeshaa toh me khud ko change kr logi tumhare liye jo baat tumhe buri lagti woh phir kbhi nhi hogi mein nhi chahti ka tum meri wajaha se hurt ho mere gadhe. ab byiii gud night mein soo rhi tumhara souchogi phele phir soo jaogi byiiiii my love 💗"</p>
+                </div>
+
+                <div class="message-box">
+                    <div class="message-icon"><i class="fas fa-moon"></i></div>
+                    <p class="message-text">"Happiest birthday my love,my forever Gadhe 💗 Tysm Gadhe for always being there for me Humeshaa khush raho mere sath 😋😋 allah kre moti churail dayan fariyal ko koi aur mil jaye 😓🙏🏻 may Allah always keep u happy with me😇 and may all bad things stay away from u just like shayan😓 I LOVE YOU SO MUCH MY FOREVER EVER GADHE 💗💗 Happiest birthday again my Love💗"</p>
+                </div>
+
+               
+
+                <div class="message-note">
+                    <i class="fas fa-quote-left"></i>
+                    You write, and my heart reads it a thousand times.
+                    <i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="nav-btn prev-btn" data-target="flowers">
+                    <i class="fas fa-arrow-left"></i> Flowers
+                </button>
+                <button class="nav-btn next-btn" data-target="ambersvoice">
+                    Her Voice <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- ===== AMBER'S VOICE MESSAGES SECTION ===== -->
+        <section class="page" id="ambersvoice">
+            <div class="section-header">
+                <h1><i class="fas fa-heart-circle"></i> Amber's Voice</h1>
+                <h2>Messages That Stole My Heart ❤️</h2>
+            </div>
+
+            <div class="voice-intro">
+                <div class="heartbeat-animation">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="intro-text">These two voice messages from you, my Gadhi, are treasures I keep close to my heart. Every time I listen to them, I fall in love all over again.</p>
+            </div>
+
+            <div class="special-voice-container">
+                <!-- First Special Voice Message -->
+                <div class="special-voice-card">
+                    <div class="voice-badge">
+                        <span class="badge-text">My Favorite #1</span>
+                        <i class="fas fa-crown"></i>
+                    </div>
+
+                    <div class="voice-card-header">
+                        <div class="voice-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="voice-title">
+                            <h3>The Message That Made My Day</h3>
+                            <p class="voice-date">A moment I'll never forget...</p>
+                        </div>
+                    </div>
+
+                    <p class="voice-context">This was the first time I heard so much love in your voice. It made me realize how lucky I am.</p>
+
+                    <!-- Audio Player 1 -->
+                    <div class="special-audio-player" id="amberVoice1">
+                        <div class="player-container">
+                            <button class="special-play-btn" data-audio="amberAudio1">
+                                <i class="fas fa-play"></i>
+                                <div class="play-pulse"></div>
+                            </button>
+
+                            <div class="player-info">
+                                <div class="track-info">
+                                    <div class="track-name">Your voice 💕 #1</div>
+                                    <div class="track-duration">
+                                        <span class="current">0:00</span> / <span class="total">0:00</span>
+                                    </div>
+                                </div>
+
+                                <div class="player-controls">
+                                    <div class="progress-wrapper">
+                                        <div class="audio-progress">
+                                            <div class="progress-fill"></div>
+                                        </div>
+                                        <input type="range" class="progress-slider" min="0" max="100" value="0">
+                                    </div>
+
+                                    <div class="volume-control">
+                                        <button class="volume-toggle">
+                                            <i class="fas fa-volume-up"></i>
+                                        </button>
+                                        <input type="range" class="volume-slider" min="0" max="100" value="80">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="loop-btn" title="Loop this message">
+                                <i class="fas fa-redo"></i>
+                            </button>
+                        </div>
+
+                        <audio class="amber-audio" id="amberAudio1" loop>
+                            <source src="ayein.mp3" type="audio/mpeg">
+                            Your browser doesn't support this beautiful voice.
+                        </audio>
+                    </div>
+
+                    <div class="my-feelings">
+                        <div class="feelings-header">
+                            <i class="fas fa-feather-alt"></i>
+                            <h4>How This Made Me Feel</h4>
+                        </div>
+                        <p class="feelings-text">"When I first heard this, I must have listened to it a hundred times. The way you said those words... it felt like my heart would burst with happiness. I saved it immediately because I knew I'd want to hear it forever."</p>
+                        <div class="feelings-footer">- Your Gadha</div>
+                    </div>
+
+                    <div class="play-count">
+                        <i class="fas fa-headphones"></i>
+                        <span>Listened: <span class="count-number">∞ times</span></span>
+                    </div>
+                </div>
+
+                <!-- Second Special Voice Message -->
+                <div class="special-voice-card">
+                    <div class="voice-badge">
+                        <span class="badge-text">My Favorite #2</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="voice-card-header">
+                        <div class="voice-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <div class="voice-title">
+                            <h3>The Late Night Whisper</h3>
+                            <p class="voice-date">That peaceful night conversation...</p>
+                        </div>
+                    </div>
+
+                    <p class="voice-context">This message came at the perfect time. Your soothing voice felt like a warm blanket for my soul.</p>
+
+                    <!-- Audio Player 2 -->
+                    <div class="special-audio-player" id="amberVoice2">
+                        <div class="player-container">
+                            <button class="special-play-btn" data-audio="amberAudio2">
+                                <i class="fas fa-play"></i>
+                                <div class="play-pulse"></div>
+                            </button>
+
+                            <div class="player-info">
+                                <div class="track-info">
+                                    <div class="track-name">Your voice 💕 #2</div>
+                                    <div class="track-duration">
+                                        <span class="current">0:00</span> / <span class="total">0:00</span>
+                                    </div>
+                                </div>
+
+                                <div class="player-controls">
+                                    <div class="progress-wrapper">
+                                        <div class="audio-progress">
+                                            <div class="progress-fill"></div>
+                                        </div>
+                                        <input type="range" class="progress-slider" min="0" max="100" value="0">
+                                    </div>
+
+                                    <div class="volume-control">
+                                        <button class="volume-toggle">
+                                            <i class="fas fa-volume-up"></i>
+                                        </button>
+                                        <input type="range" class="volume-slider" min="0" max="100" value="80">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="loop-btn" title="Loop this message">
+                                <i class="fas fa-redo"></i>
+                            </button>
+                        </div>
+
+                        <audio class="amber-audio" id="amberAudio2" loop>
+                            <source src="iii.mp3" type="audio/mpeg">
+                            Your browser doesn't support this beautiful voice.
+                        </audio>
+                    </div>
+
+                    <div class="my-feelings">
+                        <div class="feelings-header">
+                            <i class="fas fa-feather-alt"></i>
+                            <h4>Why This Is Special</h4>
+                        </div>
+                        <p class="feelings-text">"This voice note is my secret comfort. Whenever I miss you too much or need to hear your voice, I play this. It's like you're right here with me, whispering sweet things. I've lost count of how many times it's made me smile."</p>
+                        <div class="feelings-footer">- Your Gadha 💕</div>
+                    </div>
+
+                    <div class="play-count">
+                        <i class="fas fa-headphones"></i>
+                        <span>Listened: <span class="count-number">∞ times</span></span>
+                    </div>
+                </div>
+
+                <!-- Voice Memories -->
+                <div class="voice-memories">
+                    <div class="memories-header">
+                        <h3><i class="fas fa-memory"></i> Voice Memories</h3>
+                        <p>These messages aren't just audio files ` they're pieces of your heart that I carry with me everywhere.</p>
+                    </div>
+
+                    <div class="memory-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" id="totalListens">0</div>
+                            <div class="stat-label">Total Listens</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Precious Messages</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Smiles Generated</div>
+                        </div>
+                    </div>
+
+                    <div class="closing-note">
+                        <i class="fas fa-quote-left"></i>
+                        <p>My Gadhi, your voice is my favorite sound in the world. These messages are my treasure, and I'll cherish them forever.</p>
+                        <i class="fas fa-quote-right"></i>
+                        <div class="signature">- Forever your Gadha</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="nav-btn prev-btn" data-target="messages">
+                    <i class="fas fa-arrow-left"></i> Text Messages
+                </button>
+                <button class="nav-btn next-btn" data-target="nicknames">
+                    Our Nicknames <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Hidden Easter Egg -->
+            <div class="easter-egg" id="voiceEasterEgg">
+                <p><i class="fas fa-gem"></i> Secret: I know every pause, every breath, every smile in your voice notes by heart.</p>
+            </div>
+        </section>
+
+        <!-- ===== NICKNAMES SECTION ===== -->
+        <section class="page" id="nicknames">
+            <div class="section-header">
+                <h1><i class="fas fa-certificate"></i> Not Just Names...</h1>
+                <h2>It's Our Identity</h2>
+            </div>
+
+            <div class="certificate-container">
+                <div class="certificate">
+                    <div class="certificate-header">
+                        <h1>Official Title</h1>
+                    </div>
+
+                    <div class="certificate-body">
+                        <div class="nickname-display">
+                            <div class="nickname-left">
+                                <h2>Gadha 🐴</h2>
+                                <p class="real-name">(Ismail)</p>
+                                <div class="forever-tag">Forever</div>
+                            </div>
+
+                            <div class="heart-connector">
+                                <i class="fas fa-heart heartbeat"></i>
+                            </div>
+
+                            <div class="nickname-right">
+                                <h2>Gadhi 🐾</h2>
+                                <p class="real-name">(Amber)</p>
+                                <div class="forever-tag">Forever</div>
+                            </div>
+                        </div>
+
+                        <div class="certificate-details">
+                            <h3>Awarded For:</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Eternal silliness</li>
+                                <li><i class="fas fa-check-circle"></i> Endless love</li>
+                                <li><i class="fas fa-check-circle"></i> Being each other's favorite humans</li>
+                            </ul>
+
+                            <div class="seal">
+                                <div class="seal-circle">
+                                    <span>Certified</span>
+                                    <span>Forever</span>
+                                    <span>27.10.2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="nav-btn prev-btn" data-target="ambersvoice">
+                    <i class="fas fa-arrow-left"></i> Her Voice
+                </button>
+                <button class="nav-btn next-btn" data-target="newyear">
+                    New Year <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- ===== NEW YEAR SECTION ===== -->
+        <section class="page" id="newyear">
+            <div class="newyear-container">
+                <div class="newyear-header">
+                    <h1><i class="fas fa-glass-cheers"></i> Our First New Year Together</h1>
+                    <h2>And Many More To Come!</h2>
+                </div>
+
+                <div class="countdown-container">
+                    <h3>Countdown to 2026</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-box">
+                            <span class="number" id="days">00</span>
+                            <span class="label">Days</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="number" id="hours">00</span>
+                            <span class="label">Hours</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="number" id="minutes">00</span>
+                            <span class="label">Minutes</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="number" id="seconds">00</span>
+                            <span class="label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="newyear-message">
+                    <div class="message-card">
+                        <h3>My Dearest Gadhi,</h3>
+                        <p>This year gave me you. Every moment since 27th October has been a blessing. As we step into 2026, I promise to be your Gadha forever ~ loving you, annoying you, and growing old with you.</p>
+                        <p>Here's to our laughter, our silly nicknames, our flower conversations, and every text that made me fall deeper in love with you.</p>
+                        <p>May this new year bring us closer than ever. May we create more memories, share more dreams, and love more fiercely.💕</p>
+                        <p class="closing">With all my love,</p>
+                        <div class="signature-final">
+                            Your Gadha (Ismail) 🐴😂
+                        </div>
+
+                        <div class="secret-ps">
+                            <i class="fas fa-lock"></i> P.S. 27.10.2025 was the day my life truly began.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="final-buttons">
+                    <button class="nav-btn" id="restartJourney">
+                        <i class="fas fa-redo"></i> Relive Our Story
+                    </button>
+                    <button class="share-btn" id="shareBtn">
+                        <i class="fas fa-share-alt"></i> Share This Love
+                    </button>
+                </div>
+
+                <div class="footer">
+                    Made with <i class="fas fa-heart pulse"></i> by Ismail for his Gadhi 💕
+                    <br>
+                    <span class="copyright">© 2025 | Gadha & Gadhi Forever ❤️</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <div class="progress-dots">
+                <span class="dot active" data-target="home"></span>
+                <span class="dot" data-target="proposal"></span>
+                <span class="dot" data-target="memories"></span>
+                <span class="dot" data-target="flowers"></span>
+                <span class="dot" data-target="messages"></span>
+                <span class="dot" data-target="ambersvoice"></span>
+                <span class="dot" data-target="nicknames"></span>
+                <span class="dot" data-target="newyear"></span>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button id="backToTop" title="Back to Top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+
+        <!-- Swipe Indicator for Mobile -->
+        <div class="swipe-indicator">
+            <span class="swipe-icon">← Swipe →</span>
+            <span>to navigate</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
